@@ -217,7 +217,7 @@ module OAuth
       end  
 
       def oauth2_error(error="invalid_grant")
-        render :json=>{:error=>error}.to_json
+        render :json=>{:error=>error}
       end
     end
   end
